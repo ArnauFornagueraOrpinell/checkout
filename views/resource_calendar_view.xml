@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="resource_calendar_form">
+        <field name="name">resource.calendar.form</field>
+        <field name="model">resource.calendar</field>
+        <field name="inherit_id" ref="resource.resource_calendar_form"/>
+        <field name="arch" type="xml">
+            <field name="tz" position="after">
+                <field name="lunch_start_time" widget="float_time"/>
+                <field name="lunch_end_time" widget="float_time"/>
+            </field>
+        </field>
+    </record>
+
+
+
+</odoo>
